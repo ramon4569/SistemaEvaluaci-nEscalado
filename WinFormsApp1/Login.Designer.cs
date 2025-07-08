@@ -35,7 +35,6 @@
             TXTCONTRASENA = new TextBox();
             label1 = new Label();
             BTNACCEDER = new Button();
-            linkLabel1 = new LinkLabel();
             BTNCERRAR = new PictureBox();
             btnminimizar = new PictureBox();
             panel1.SuspendLayout();
@@ -116,16 +115,6 @@
             BTNACCEDER.UseVisualStyleBackColor = false;
             BTNACCEDER.Click += BTNACCEDER_Click;
             // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(712, 483);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(163, 20);
-            linkLabel1.TabIndex = 5;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "¿Olvido su Contraseña?";
-            // 
             // BTNCERRAR
             // 
             BTNCERRAR.Image = (Image)resources.GetObject("BTNCERRAR.Image");
@@ -148,7 +137,7 @@
             btnminimizar.TabStop = false;
             btnminimizar.Click += btnminimizar_Click;
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -156,14 +145,13 @@
             ClientSize = new Size(1235, 529);
             Controls.Add(btnminimizar);
             Controls.Add(BTNCERRAR);
-            Controls.Add(linkLabel1);
             Controls.Add(BTNACCEDER);
             Controls.Add(label1);
             Controls.Add(TXTCONTRASENA);
             Controls.Add(TXTUSUARIO);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "Login";
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -183,7 +171,6 @@
         private TextBox TXTCONTRASENA;
         private Label label1;
         private Button BTNACCEDER;
-        private LinkLabel linkLabel1;
         private PictureBox BTNCERRAR;
         private PictureBox pictureBox3;
         private PictureBox btnminimizar;

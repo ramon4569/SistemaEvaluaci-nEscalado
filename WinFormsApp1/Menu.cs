@@ -267,9 +267,24 @@ namespace CapaPresentacion
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Esta seguro de que quiere cerrar sesion?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                this.Close();
+            // Paso 1: Preguntar al usuario si realmente quiere cerrar sesión (opcional pero recomendado)
+            DialogResult result = MessageBox.Show("¿Estás seguro que quieres cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                // Paso 2: Crear una nueva instancia del formulario de Login
+                Login formLogin = new Login(); // Asume que tu formulario de Login se llama 'Login'
+
+                // Paso 3: Mostrar el formulario de Login
+                formLogin.Show();
+
+                // Paso 4: Ocultar o cerrar el formulario actual (Menu)
+                // Ocultar el formulario actual:
+                this.Close();
+                // Cerrar el formulario actual (esto también oculta automáticamente):
+            
+
+            }
         }
 
         private void BTNCERRAR_MouseLeave(object sender, EventArgs e)
@@ -286,7 +301,24 @@ namespace CapaPresentacion
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            // Paso 1: Preguntar al usuario si realmente quiere cerrar sesión (opcional pero recomendado)
+            DialogResult result = MessageBox.Show("¿Estás seguro que quieres cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                // Paso 2: Crear una nueva instancia del formulario de Login
+                Login formLogin = new Login(); // Asume que tu formulario de Login se llama 'Login'
+
+                // Paso 3: Mostrar el formulario de Login
+                formLogin.Show();
+
+                // Paso 4: Ocultar o cerrar el formulario actual (Menu)
+                // Ocultar el formulario actual:
+                this.Close();
+                // Cerrar el formulario actual (esto también oculta automáticamente):
+
+
+            }
         }
 
         private void pictureBox7_MouseEnter(object sender, EventArgs e)
