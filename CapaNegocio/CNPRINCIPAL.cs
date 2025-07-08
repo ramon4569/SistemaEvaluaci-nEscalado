@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 
 namespace CapaNegocio
 {
-    // --- 1. CLASES DE MODELO (DEFINEN LA ESTRUCTURA DE TUS DATOS) ---
+    // --- 1. CLASES (DEFINEN LA ESTRUCTURA DE TUS DATOS) ---
 
     /// <summary>
     /// Representa la tabla 'Estudiantes'.
@@ -25,7 +25,7 @@ namespace CapaNegocio
         public string Apellidos { get; set; }
         public bool Activo { get; set; }
 
-        // Constructor sin parámetros (opcional, si ya existe el constructor con parámetros)
+        // Constructor sin parámetros 
         public Estudiante()
         {
             Activo = true; // Por defecto, un estudiante es activo al crearse
@@ -134,11 +134,6 @@ namespace CapaNegocio
         public string Rol { get; set; }
     }
 
-    // --- 2. CLASE DE ACCESO A DATOS (ÚNICA CLASE PARA TODAS LAS OPERACIONES) ---
-
-    /// <summary>
-    /// Contiene todos los métodos para interactuar con la base de datos.
-    /// </summary>
 
 }
 

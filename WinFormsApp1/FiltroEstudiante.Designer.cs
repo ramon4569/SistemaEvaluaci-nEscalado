@@ -42,6 +42,7 @@
             label2 = new Label();
             label1 = new Label();
             DVGEVALUACIONES = new DataGridView();
+            BTNCERRAR1 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DVGEVALUACIONES).BeginInit();
             SuspendLayout();
@@ -190,11 +191,22 @@
             DVGEVALUACIONES.TabIndex = 0;
             DVGEVALUACIONES.CellContentClick += DVGEVALUACIONES_CellContentClick;
             // 
+            // BTNCERRAR1
+            // 
+            BTNCERRAR1.Location = new Point(946, 12);
+            BTNCERRAR1.Name = "BTNCERRAR1";
+            BTNCERRAR1.Size = new Size(88, 26);
+            BTNCERRAR1.TabIndex = 10;
+            BTNCERRAR1.Text = "CERRAR";
+            BTNCERRAR1.UseVisualStyleBackColor = true;
+            BTNCERRAR1.Click += BTNCERRAR1_Click;
+            // 
             // FiltroEstudiante
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1066, 383);
+            Controls.Add(BTNCERRAR1);
             Controls.Add(groupBox1);
             Controls.Add(BTNELIMINAR);
             Controls.Add(BTNEDITAR);
@@ -225,5 +237,6 @@
         private Label label2;
         private Label label1;
         private DataGridView DVGEVALUACIONES;
+        private Button BTNCERRAR1;
     }
 }

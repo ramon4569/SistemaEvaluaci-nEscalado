@@ -34,6 +34,8 @@
             BTNVISUALIZAR = new Button();
             BTNREPORTES = new Button();
             MenuLateral = new Panel();
+            pictureBox7 = new PictureBox();
+            BTNCERRAR = new Button();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -45,6 +47,7 @@
             ContenedorDeFormularios = new Panel();
             pictureBox1 = new PictureBox();
             MenuLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -67,7 +70,7 @@
             BTNGESTION.Location = new Point(0, 123);
             BTNGESTION.Name = "BTNGESTION";
             BTNGESTION.Padding = new Padding(10, 0, 0, 0);
-            BTNGESTION.Size = new Size(107, 37);
+            BTNGESTION.Size = new Size(243, 37);
             BTNGESTION.TabIndex = 10;
             BTNGESTION.Text = "       Gestion";
             BTNGESTION.TextAlign = ContentAlignment.MiddleLeft;
@@ -91,7 +94,7 @@
             BTNREGISTRAR.Location = new Point(0, 160);
             BTNREGISTRAR.Name = "BTNREGISTRAR";
             BTNREGISTRAR.Padding = new Padding(10, 0, 0, 0);
-            BTNREGISTRAR.Size = new Size(107, 43);
+            BTNREGISTRAR.Size = new Size(243, 43);
             BTNREGISTRAR.TabIndex = 14;
             BTNREGISTRAR.Text = "       Registrar Evaluacion";
             BTNREGISTRAR.TextAlign = ContentAlignment.MiddleLeft;
@@ -111,7 +114,7 @@
             BTNVISUALIZAR.Location = new Point(0, 203);
             BTNVISUALIZAR.Name = "BTNVISUALIZAR";
             BTNVISUALIZAR.Padding = new Padding(10, 0, 0, 0);
-            BTNVISUALIZAR.Size = new Size(107, 49);
+            BTNVISUALIZAR.Size = new Size(243, 49);
             BTNVISUALIZAR.TabIndex = 16;
             BTNVISUALIZAR.Text = "       Visualizar";
             BTNVISUALIZAR.TextAlign = ContentAlignment.MiddleLeft;
@@ -131,7 +134,7 @@
             BTNREPORTES.Location = new Point(0, 252);
             BTNREPORTES.Name = "BTNREPORTES";
             BTNREPORTES.Padding = new Padding(10, 0, 0, 0);
-            BTNREPORTES.Size = new Size(107, 52);
+            BTNREPORTES.Size = new Size(243, 52);
             BTNREPORTES.TabIndex = 19;
             BTNREPORTES.Text = "      Reporte";
             BTNREPORTES.TextAlign = ContentAlignment.MiddleLeft;
@@ -144,6 +147,8 @@
             // 
             MenuLateral.AutoScroll = true;
             MenuLateral.BackColor = SystemColors.ActiveCaptionText;
+            MenuLateral.Controls.Add(pictureBox7);
+            MenuLateral.Controls.Add(BTNCERRAR);
             MenuLateral.Controls.Add(pictureBox6);
             MenuLateral.Controls.Add(pictureBox5);
             MenuLateral.Controls.Add(pictureBox4);
@@ -163,6 +168,38 @@
             MenuLateral.Size = new Size(50, 463);
             MenuLateral.TabIndex = 3;
             MenuLateral.Paint += MenuLateral_Paint;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.image__2_;
+            pictureBox7.Location = new Point(9, 394);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(31, 27);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 26;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            pictureBox7.MouseEnter += pictureBox7_MouseEnter;
+            pictureBox7.MouseLeave += pictureBox7_MouseLeave;
+            // 
+            // BTNCERRAR
+            // 
+            BTNCERRAR.BackColor = Color.Transparent;
+            BTNCERRAR.FlatAppearance.BorderSize = 0;
+            BTNCERRAR.FlatStyle = FlatStyle.Flat;
+            BTNCERRAR.Font = new Font("Tw Cen MT", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BTNCERRAR.ForeColor = Color.WhiteSmoke;
+            BTNCERRAR.Location = new Point(3, 381);
+            BTNCERRAR.Name = "BTNCERRAR";
+            BTNCERRAR.Padding = new Padding(10, 0, 0, 0);
+            BTNCERRAR.Size = new Size(240, 52);
+            BTNCERRAR.TabIndex = 27;
+            BTNCERRAR.Text = "      Cerrar Sesion";
+            BTNCERRAR.TextAlign = ContentAlignment.MiddleLeft;
+            BTNCERRAR.UseVisualStyleBackColor = false;
+            BTNCERRAR.Click += button1_Click_1;
+            BTNCERRAR.MouseEnter += BTNCERRAR_MouseEnter;
+            BTNCERRAR.MouseLeave += BTNCERRAR_MouseLeave;
             // 
             // pictureBox6
             // 
@@ -235,7 +272,7 @@
             pictureBox3.Dock = DockStyle.Top;
             pictureBox3.Location = new Point(0, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(107, 123);
+            pictureBox3.Size = new Size(243, 123);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 9;
             pictureBox3.TabStop = false;
@@ -284,6 +321,7 @@
             Load += Form2_Load;
             MenuLateral.ResumeLayout(false);
             MenuLateral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -311,5 +349,7 @@
         public Panel MenuLateral;
         private Panel ContenedorDeFormularios;
         private PictureBox pictureBox1;
+        private Button BTNCERRAR;
+        private PictureBox pictureBox7;
     }
 }

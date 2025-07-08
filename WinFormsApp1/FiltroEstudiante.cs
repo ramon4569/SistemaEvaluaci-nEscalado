@@ -13,10 +13,10 @@ namespace CapaPresentacion
 {
     public partial class FiltroEstudiante : Form
     {
-        // Instances of your business logic classes
+        // Instancia de Clase
         private MetodoParaObtenerEstudiantesActivos metodoparaobtenerEstudiantesActivos = new MetodoParaObtenerEstudiantesActivos();
         private MetodoParaObtenerEvaluaciones metodoparaobtenerevaluaciones = new MetodoParaObtenerEvaluaciones();
-        // This seems to be your update method, ensure it actually updates
+
         private MetodoparaActualizarCalificacion metodoparaactualizarcalificaciones = new MetodoparaActualizarCalificacion();
         private MetodoParaEliminarEvaluacion metodoparaeliminarevaluaciones = new MetodoParaEliminarEvaluacion();
 
@@ -30,12 +30,8 @@ namespace CapaPresentacion
             DVGEVALUACIONES.AllowUserToDeleteRows = false;
             DVGEVALUACIONES.MultiSelect = false; // Only allow one row to be selected at a time
 
-            // *** IMPORTANT: Remove the conflicting ReadOnly = false here or the call to ConfigurarDataGridViewNoEditable() below.
-            // We will set ReadOnly = false on the main DGV in ConfigurarDataGridView() and then explicitly for columns.
 
-            // *** AÑADE ESTA LÍNEA PARA ASOCIAR EL EVENTO MANUALMENTE (esto ya estaba, es correcto) ***
             DVGEVALUACIONES.CellEndEdit += DVGEVALUACIONES_CellEndEdit;
-            // Also subscribe CellBeginEdit if you want to control which cells are editable on manual clicks
             DVGEVALUACIONES.CellBeginEdit += DVGEVALUACIONES_CellBeginEdit;
 
             // Configure ComboBox DropDownStyle (this is correct)
@@ -302,6 +298,11 @@ namespace CapaPresentacion
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BTNCERRAR1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

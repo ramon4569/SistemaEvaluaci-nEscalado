@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaPresentacion;
+using WinFormsApp1;
 
 
 namespace CapaPresentacion
@@ -180,7 +181,7 @@ namespace CapaPresentacion
 
         private void BTNGESTION_MouseLeave(object sender, EventArgs e)
         {
-            BTNGESTION.BackColor = Color.Transparent; BTNGESTION.ForeColor = Color.Transparent;
+            BTNGESTION.BackColor = Color.Transparent; BTNGESTION.ForeColor = Color.Transparent; //Esto es solamente para diseño
 
 
         }
@@ -202,41 +203,41 @@ namespace CapaPresentacion
 
         private void BTNGESTION_MouseEnter(object sender, EventArgs e)
         {
-            BTNGESTION.BackColor = Color.FromArgb(43, 49, 58);
+            BTNGESTION.BackColor = Color.FromArgb(43, 49, 58);//Esto es solamente para diseño
 
         }
 
         private void BTNREGISTRAR_MouseEnter(object sender, EventArgs e)
         {
-            BTNREGISTRAR.BackColor = Color.FromArgb(43, 49, 58);
+            BTNREGISTRAR.BackColor = Color.FromArgb(43, 49, 58);//Esto es solamente para diseño
 
         }
 
         private void BTNVISUALIZAR_MouseEnter(object sender, EventArgs e)
         {
-            BTNVISUALIZAR.BackColor = Color.FromArgb(43, 49, 58);
+            BTNVISUALIZAR.BackColor = Color.FromArgb(43, 49, 58);//Esto es solamente para diseño
 
         }
 
         private void BTNREPORTES_MouseEnter(object sender, EventArgs e)
         {
-            BTNREPORTES.BackColor = Color.FromArgb(43, 49, 58);
+            BTNREPORTES.BackColor = Color.FromArgb(43, 49, 58);//Esto es solamente para diseño
 
         }
 
         private void BTNREGISTRAR_MouseLeave(object sender, EventArgs e)
         {
-            BTNREGISTRAR.BackColor = Color.Transparent; BTNREGISTRAR.ForeColor = Color.Transparent;
+            BTNREGISTRAR.BackColor = Color.Transparent; BTNREGISTRAR.ForeColor = Color.Transparent;//Esto es solamente para diseño
         }
 
         private void BTNVISUALIZAR_MouseLeave(object sender, EventArgs e)
         {
-            BTNVISUALIZAR.BackColor = Color.Transparent; BTNVISUALIZAR.ForeColor = Color.Transparent;
+            BTNVISUALIZAR.BackColor = Color.Transparent; BTNVISUALIZAR.ForeColor = Color.Transparent;//Esto es solamente para diseño
         }
 
         private void BTNREPORTES_MouseLeave(object sender, EventArgs e)
         {
-            BTNREPORTES.BackColor = Color.Transparent; BTNREPORTES.ForeColor = Color.Transparent;
+            BTNREPORTES.BackColor = Color.Transparent; BTNREPORTES.ForeColor = Color.Transparent; //Esto es solamente para diseño
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -261,6 +262,42 @@ namespace CapaPresentacion
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de que quiere cerrar sesion?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+
+        }
+
+        private void BTNCERRAR_MouseLeave(object sender, EventArgs e)
+        {
+            BTNCERRAR.BackColor = Color.Transparent; BTNCERRAR.ForeColor = Color.Transparent;//Esto es solamente para diseño
+
+        }
+
+        private void BTNCERRAR_MouseEnter(object sender, EventArgs e)
+        {
+            BTNCERRAR.BackColor = Color.FromArgb(43, 49, 58);//Esto es solamente para diseño
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_MouseEnter(object sender, EventArgs e)
+        {
+            //pictureBox7.BackColor = Color.FromArgb(43, 49, 58);//Esto es solamente para diseño
+
+        }
+
+        private void pictureBox7_MouseLeave(object sender, EventArgs e)
+        {
+           // pictureBox7.BackColor = Color.Transparent; pictureBox7.ForeColor = Color.Transparent;//Esto es solamente para diseño
 
         }
     }

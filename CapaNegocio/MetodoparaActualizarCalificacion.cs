@@ -13,7 +13,6 @@ namespace CapaNegocio
         public override void PrepararOperacion()
         {
             // Implementación básica para cumplir con el contrato de la clase base.  
-            // Puedes agregar lógica específica aquí si es necesario.  
             Console.WriteLine("Preparando operación en MetodoparaActualizarCalificacion.");
         }
 

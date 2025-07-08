@@ -3,33 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting; // ¡Importante!
-using CapaNegocio; // Para acceder a DatosManager y tus clases de modelo
-using System.IO; // Necesario para la exportación de archivos
+using System.Windows.Forms.DataVisualization.Charting;
+using CapaNegocio;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Drawing; // Para System.Drawing.Image
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO; // Para Stream, FileStream
-// *** NUEVOS USING PARA EPPLUS ***
-using OfficeOpenXml; // Para ExcelPackage, ExcelWorksheet
-using OfficeOpenXml.Drawing; // Para ExcelPicture (imágenes)
-using OfficeOpenXml.Style; // Para estilos (alineación, negritas, etc.)
-using System;
-using System.Collections.Generic;
-using System.Drawing; // Para System.Drawing.Image, Bitmap, etc.
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO; // Para Stream, FileStream
-
+using OfficeOpenXml;
+using OfficeOpenXml.Drawing;
+using OfficeOpenXml.Style;
 
 
 
@@ -355,12 +339,7 @@ namespace CapaPresentacion
             this.Close();
         }
 
-        // *** IMPORTANTE: Si ya tienes 'private System.Windows.Forms.DataVisualization.Charting.Chart chartDistribucionTipo;'
-        // y otras declaraciones de controles en FormReporte.Designer.cs,
-        // ENTONCES QUITA LA DECLARACIÓN CORRESPONDIENTE DE ESTE ARCHIVO FormReporte.cs (la que está al principio de la clase).
-        // Y asegúrate de que el código de inicialización del chart en el constructor de FormReporte.cs está acorde:
-        // si lo tienes en el diseñador -> no lo inicialices por código aquí.
-        // si NO lo tienes en el diseñador -> sí inicialízalo por código aquí (como está ahora descomentado).
+ 
     }
 
 
