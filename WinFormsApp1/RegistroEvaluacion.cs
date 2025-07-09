@@ -16,7 +16,7 @@ namespace CapaPresentacion
     {
         public string connectionString = "Server=.;Database=SistemaEvaluacionesDB;Integrated Security=true" + " ;TrustServerCertificate=True;"; // Aqui abro nuevamente la cadena de conexion, para que el metodo pueda acceder a la base de datos correctamente
         SqlConnection connection = new SqlConnection("Server=.;Database=SistemaEvaluacionesDB;Integrated Security=true" + " ;TrustServerCertificate=True;"); //
-        SqlDataAdapter adapt;
+        SqlDataAdapter adapt;  
         public RegistroEvaluacion()
         {
 
