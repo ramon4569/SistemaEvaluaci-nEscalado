@@ -12,14 +12,16 @@ namespace CapaNegocio
     {
         public override void PrepararOperacion()
         {
-            // Implementación básica para cumplir con el contrato de la clase base.  
-            Console.WriteLine("Preparando operación en MetodoparaActualizarCalificacion.");
+            // Ahora, en lugar de Console.WriteLine, usamos la propiedad MostrarMensajeUI.
+            // Verificamos que no sea nula antes de usarla, por si no se ha "conectado" desde la UI.
+            MostrarMensajeUI?.Invoke("MetodoparaActualizarCalificacion: Preparando operación para actualizar calificación.");
         }
 
         public bool ActualizarCalificacion(int idEvaluacion, decimal nuevaCalificacion)
         {
             try
             {
+                PrepararOperacion();
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();

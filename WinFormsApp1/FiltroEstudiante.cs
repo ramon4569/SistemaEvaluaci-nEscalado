@@ -23,6 +23,21 @@ namespace CapaPresentacion
        
         public FiltroEstudiante()
         {
+
+            metodoparaactualizarcalificaciones.MostrarMensajeUI = (mensaje) =>
+            {
+                // Siempre usa InvokeRequired cuando actualices la UI desde otro "hilo"
+                // aunque en este caso probablemente sea el mismo hilo, es una buena práctica.
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new Action<string>((msg) => MessageBox.Show(msg, "Información de Operación", MessageBoxButtons.OK, MessageBoxIcon.Information)), new object[] { mensaje });
+                }
+                else
+                {
+                    MessageBox.Show(mensaje, "Información de Operación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }; 
+
             InitializeComponent();
             
             // Initial DataGridView setup (these are good)

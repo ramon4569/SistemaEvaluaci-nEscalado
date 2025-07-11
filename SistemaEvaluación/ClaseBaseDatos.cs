@@ -22,6 +22,7 @@ namespace CapaDatos
 
         // Método Protegido Virtual: Puede ser sobrescrito por clases derivadas
         // Usaremos esto para una posible lógica de loggeo o validación de conexión pre-operación
+        public Action<string> MostrarMensajeUI { get; set; }
         protected virtual SqlConnection GetConnection()
         {
             Console.WriteLine("BaseDatos: Obteniendo conexión a la base de datos."); // Para demostración
