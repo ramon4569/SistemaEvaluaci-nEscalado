@@ -20,10 +20,11 @@ namespace CapaPresentacion
         private MetodoparaActualizarCalificacion metodoparaactualizarcalificaciones = new MetodoparaActualizarCalificacion();
         private MetodoParaEliminarEvaluacion metodoparaeliminarevaluaciones = new MetodoParaEliminarEvaluacion();
 
+       
         public FiltroEstudiante()
         {
             InitializeComponent();
-
+            
             // Initial DataGridView setup (these are good)
             DVGEVALUACIONES.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DVGEVALUACIONES.AllowUserToAddRows = false;

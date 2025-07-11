@@ -253,6 +253,7 @@ namespace CapaPresentacion
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new FiltroEstudiante());
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

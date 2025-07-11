@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             chartDistribucionTipo = new System.Windows.Forms.DataVisualization.Charting.Chart();
             btnExportarExcel = new Button();
             dgvDesempenoEstudiante = new DataGridView();
@@ -41,16 +41,16 @@
             // 
             // chartDistribucionTipo
             // 
-            chartArea1.Name = "ChartArea1";
-            chartDistribucionTipo.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chartDistribucionTipo.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            chartDistribucionTipo.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            chartDistribucionTipo.Legends.Add(legend2);
             chartDistribucionTipo.Location = new Point(570, 32);
             chartDistribucionTipo.Name = "chartDistribucionTipo";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartDistribucionTipo.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            chartDistribucionTipo.Series.Add(series2);
             chartDistribucionTipo.Size = new Size(426, 308);
             chartDistribucionTipo.TabIndex = 0;
             chartDistribucionTipo.Text = "chart1";
@@ -79,9 +79,9 @@
             // 
             // BTNCERRAR1
             // 
-            BTNCERRAR1.Location = new Point(455, 315);
+            BTNCERRAR1.Location = new Point(891, 12);
             BTNCERRAR1.Name = "BTNCERRAR1";
-            BTNCERRAR1.Size = new Size(77, 34);
+            BTNCERRAR1.Size = new Size(105, 32);
             BTNCERRAR1.TabIndex = 16;
             BTNCERRAR1.Text = "CERRAR";
             BTNCERRAR1.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1066, 383);
+            ClientSize = new Size(1136, 383);
             Controls.Add(BTNCERRAR1);
             Controls.Add(dgvDesempenoEstudiante);
             Controls.Add(btnExportarExcel);
